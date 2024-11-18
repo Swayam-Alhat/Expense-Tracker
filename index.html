@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses Tracker</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="h-screen w-screen bg-[#010101] flex justify-center items-center">
+    <main>
+      <!-- the main container -->
+      <div
+        id="container"
+        class="h-auto max-w-[700px] bg-slate-900 px-3 py-3 text-center rounded-sm"
+      >
+        <!-- the heading -->
+        <h1 class="text-white text-2xl font-bold mb-3">Expense Tracker</h1>
+        <!-- the form tags -->
+        <form id="form" action="#" class="mb-3">
+          <input
+            id="expenseInput"
+            class="bg-stone-400 placeholder-slate-700 outline-none pl-2 py-1 text-[18px] font-bold"
+            type="text"
+            required
+            placeholder="Expense"
+          />
+          <input
+            id="amountInput"
+            class="bg-stone-400 placeholder-slate-700 outline-none pl-2 py-1 text-[18px] font-bold"
+            type="number"
+            required
+            min="0"
+            placeholder="Amount"
+          />
+          <!-- submit button -->
+          <button
+            type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-[17.4px] py-1 px-3 font-semibold"
+          >
+            Add Expenses
+          </button>
+        </form>
+        <!-- another heading -->
+        <h1 class="text-white text-[20px] font-bold mb-3">Your Expenses</h1>
+        <!-- the list of divs start here where expenses will mention -->
+        <div id="itemContainer">
+          <!-- the 1st div -->
+
+          <!-- the 2nd div starts -->
+        </div>
+
+        <!-- the total statement -->
+        <h2 id="totalText" class="text-white text-[20px] font-bold mb-3"></h2>
+      </div>
+      <!-- the main conatiner ends here -->
+    </main>
+    <script src="first.js"></script>
+  </body>
+</html>
